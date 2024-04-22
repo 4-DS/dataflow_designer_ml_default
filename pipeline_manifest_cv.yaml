@@ -37,11 +37,10 @@ steps:
   substeps:
   - substep_name: pack
     inputs:
-    - entity_name: "inference_files"
-    outputs:
     - step_name: model_train
-      entity_name: "bento_service"
-    outputs: []
+      entity_name: "inference_files"
+    outputs:
+    - entity_name: "bento_service"
 - step_name: model_eval
   substeps:
   - substep_name: eval
